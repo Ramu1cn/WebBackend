@@ -1,3 +1,5 @@
-import numpy as np
-a=np.zeros((2,3))
-print(a)
+with open("random.txt","r") as f:
+    lines = f.readlines()
+    for line in lines:
+        if line.__contains__("random"):
+            print(line)
